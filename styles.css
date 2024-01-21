@@ -39,11 +39,11 @@ body {
 	transform: translate(var(--x), var(--y)) scale(0.35) rotate(var(--angle));
 	will-change: transform;
 }
-.card:hover {
+.card:hover, .card:active {
 	transform: scale(1) rotate(0deg);
 	z-index: 1;
 }
-.card:hover:before {
+.card:hover:before .card:active:before{
 	opacity: 1;
 }
 .card:before {
@@ -70,3 +70,18 @@ body {
 	opacity: 0.75;
 	text-align: center;
 }
+
+/* @media only screen and (max-width: 500px) {
+	body{
+		overflow: hidden;
+	}
+
+	.cardHover {
+		transform: scale(1) rotate(0deg);
+		z-index: 1;
+	}
+
+	.cardHoverBefore {
+		opacity: 1;
+	}
+  } */
