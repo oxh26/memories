@@ -43,7 +43,7 @@ body {
 	transform: scale(1) rotate(0deg);
 	z-index: 1;
 }
-.card:hover:before .card:active:before{
+.card:hover:before{
 	opacity: 1;
 }
 .card:before {
@@ -58,7 +58,7 @@ body {
 	border-radius: 2px;
 	filter: sepia(0.2) brightness(0.9) contrast(1.2);
 	transition: opacity 0.35s ease-out;
-	opacity: 0.5;
+	opacity: 0.9;
 	will-change: opacity;
 }
 .card:after {
